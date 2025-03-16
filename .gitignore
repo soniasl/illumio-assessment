@@ -3,3 +3,5 @@ venv/
 
 # Byte-compiled files
 __pycache__/
+
+output.txt
