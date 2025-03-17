@@ -24,6 +24,6 @@
 3. Run `python3 program.py`
 
 ## Testing
-1. Uncomment line 90
-2. Comment out line 93
+1. Uncomment line 96 and 97
+2. Comment out line 100
 3. `python3 program.py`
