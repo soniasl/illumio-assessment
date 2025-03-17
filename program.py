@@ -63,7 +63,7 @@ def count_tag_and_port_protocol_combinations(
         return
 
     generate_output_file(lookup_table, flow_log_records)
-    print("✅ Created output.txt in program directory")
+    print("✅ Created output.txt in current directory")
 
 
 def get_file_paths():
