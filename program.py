@@ -4,8 +4,13 @@ from src.helper_functions import (
     generate_output_file,
 )
 
+import filecmp
+
 TEST_CSV_FILE_PATH = "./lib/lookup_table.csv"
-TEST_TXT_FILE_PATH = "./lib/sample_flow_log_records.txt"
+TEST_TXT_FILE_PATH = "./lib/flow_log_records.txt"
+
+EXPECTED_OUTPUT_FILE_PATH = "./lib/expected_output.txt"
+ACTUAL_OUTPUT_FILE_PATH = "./output.txt"
 
 
 def count_tag_and_port_protocol_combinations(
@@ -87,7 +92,9 @@ def get_file_paths():
 
 
 # TESTING
-# count_tag_and_port_protocol_combinations(TEST_CSV_FILE_PATH, TEST_TXT_FILE_PATH)
 
-# FILE PATHS FROM USER
+# count_tag_and_port_protocol_combinations(TEST_CSV_FILE_PATH, TEST_TXT_FILE_PATH)
+# print("Correct output?: ", filecmp.cmp(ACTUAL_OUTPUT_FILE_PATH, EXPECTED_OUTPUT_FILE_PATH))
+
+# GET FILE PATHS FROM USER
 get_file_paths()
