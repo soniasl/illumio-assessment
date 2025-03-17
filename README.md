@@ -24,7 +24,7 @@
 3. Run `python3 program.py`
 
 ## Testing
-To verify that the output of the program is correct, the contents of `output.txt` is compared to `expected_output.txt` using the python `filecmp` module.
+To verify that the output of the program is correct, the content of `output.txt` is compared to `expected_output.txt` using the python `filecmp` module.
 1. Uncomment line 96 and 97
 2. Comment out line 100
 3. `python3 program.py`
