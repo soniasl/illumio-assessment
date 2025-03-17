@@ -19,8 +19,9 @@
 - `python3`
 
 ## Instructions
-1. Create a python virtual environment with `python3 -m venv venv`
-2. `python3 program.py`
+1. Create a python virtual environment: `python3 -m venv venv`
+2. Activate python virtual environment: `source venv/bin/activate`
+3. Run `python3 program.py`
 
 ## Testing
 1. Uncomment line 90
