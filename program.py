@@ -8,7 +8,7 @@ TEST_CSV_FILE_PATH = "./lib/lookup_table.csv"
 TEST_TXT_FILE_PATH = "./lib/sample_flow_log_records.txt"
 
 
-def countTagAndPortProtocolCombinations(
+def count_tag_and_port_protocol_combinations(
     lookup_table_file_path: str, flow_log_records_file_path: str
 ) -> None:
     """
@@ -66,23 +66,28 @@ def countTagAndPortProtocolCombinations(
     print("✅ Created output.txt in program directory")
 
 
-def getFilePaths():
-    csv_file_path = input("Enter relative file path to lookup table csv file: ")
+def get_file_paths():
+    """
+    Prompts the user for the relative file paths of the lookup table CSV file and flow log records text file.
+    Uses user-entered file paths to call count_tag_and_port_protocol_combinations function.
+    """
+    csv_file_path = input("Enter relative file path to lookup table CSV file: ")
 
     if not csv_file_path:
         print("⚠️ No csv file path entered")
         return
 
-    txt_file_path = input("Enter relative file path to flow log records txt file: ")
+    txt_file_path = input("Enter relative file path to flow log records text file: ")
 
     if not txt_file_path:
         print("⚠️ No txt file path entered")
         return
 
-    countTagAndPortProtocolCombinations(csv_file_path, txt_file_path)
+    count_tag_and_port_protocol_combinations(csv_file_path, txt_file_path)
 
 
-# TEST
-# countTagAndPortProtocolCombinations(TEST_CSV_FILE_PATH, TEST_TXT_FILE_PATH)
+# TESTING
+# count_tag_and_port_protocol_combinations(TEST_CSV_FILE_PATH, TEST_TXT_FILE_PATH)
 
-getFilePaths()
+# FILE PATHS FROM USER
+get_file_paths()
